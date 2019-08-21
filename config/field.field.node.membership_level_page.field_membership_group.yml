@@ -1,0 +1,29 @@
+uuid: 554eb9c8-1958-4dd2-b696-fa195893957d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_membership_group
+    - node.type.membership_level_page
+    - taxonomy.vocabulary.membership_level_vocab
+id: node.membership_level_page.field_membership_group
+field_name: field_membership_group
+entity_type: node
+bundle: membership_level_page
+label: 'Membership Group'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      membership_level_vocab: membership_level_vocab
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

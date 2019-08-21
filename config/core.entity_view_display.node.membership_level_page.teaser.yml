@@ -1,0 +1,30 @@
+uuid: 8fb03c88-9df1-45ea-b447-d2ea32baf428
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.membership_level_page.body
+    - node.type.membership_level_page
+  module:
+    - text
+    - user
+id: node.membership_level_page.teaser
+targetEntityType: node
+bundle: membership_level_page
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

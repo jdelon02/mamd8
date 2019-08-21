@@ -1,0 +1,22 @@
+uuid: 42df0f42-80e2-4c23-9a31-b18c4a6f7c38
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.membership_level_page
+  module:
+    - text
+id: node.membership_level_page.body
+field_name: body
+entity_type: node
+bundle: membership_level_page
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

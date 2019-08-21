@@ -1,0 +1,30 @@
+uuid: b7916630-29a8-4795-a172-e95f4c91471f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.staff_page.body
+    - node.type.staff_page
+  module:
+    - text
+    - user
+id: node.staff_page.teaser
+targetEntityType: node
+bundle: staff_page
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

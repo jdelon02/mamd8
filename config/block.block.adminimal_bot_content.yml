@@ -1,0 +1,22 @@
+uuid: 36cdf9c2-8475-4ae6-a38d-763de391a81a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - adminimal_bot
+_core:
+  default_config_hash: QQzEOEDaR9oZzpCA1BK8HO65IYiyFw43zOkrOrYkNqE
+id: adminimal_bot_content
+theme: adminimal_bot
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }
