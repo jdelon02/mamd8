@@ -8,6 +8,9 @@ framework:
       css/style.css: {}
   js:
     '//kit.fontawesome.com/a8f06ff502.js': { type: external, minified: true }
+    js/tab-fix.js: {}
+
+
 # Uncomment for LESS source JavaScript files.
 #  js:
 #    bootstrap/js/affix.js: {}

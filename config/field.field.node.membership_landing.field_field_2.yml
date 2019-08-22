@@ -1,0 +1,19 @@
+uuid: ac7dc36d-b7c7-496e-93bd-8459c0c4969b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_field_2
+    - node.type.membership_landing
+id: node.membership_landing.field_field_2
+field_name: field_field_2
+entity_type: node
+bundle: membership_landing
+label: 'Field 2'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
