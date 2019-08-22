@@ -64,6 +64,8 @@ module:
   responsive_bg_image_formatter: 0
   responsive_image: 0
   search: 0
+  search_api: 0
+  search_api_db: 0
   select2: 0
   select2_facets: 0
   shortcut: 0
