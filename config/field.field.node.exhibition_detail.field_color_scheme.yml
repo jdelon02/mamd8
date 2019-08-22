@@ -1,0 +1,21 @@
+uuid: 3a08f09d-bbc5-4c93-8d34-9c673d8b6c76
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_color_scheme
+    - node.type.exhibition_detail
+  module:
+    - options
+id: node.exhibition_detail.field_color_scheme
+field_name: field_color_scheme
+entity_type: node
+bundle: exhibition_detail
+label: 'Color Scheme'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

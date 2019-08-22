@@ -1,0 +1,22 @@
+uuid: f2209ece-0c1d-4687-9ba2-cf091e14d980
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.exhibition_detail
+  module:
+    - text
+id: node.exhibition_detail.body
+field_name: body
+entity_type: node
+bundle: exhibition_detail
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,8 @@
+uuid: 7aca861b-a978-4d31-bee0-dc7c414a1226
+langcode: en
+status: true
+dependencies: {  }
+name: 'Membership Level'
+vid: membership_level_vocab
+description: ''
+weight: 0

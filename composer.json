@@ -23,6 +23,7 @@
         "drupal/admin_toolbar": "^1.26",
         "drupal/adminimal_admin_toolbar": "^1.9",
         "drupal/adminimal_theme": "^1.4",
+        "drupal/auto_entitylabel": "^3.0",
         "drupal/bamboo_twig": "^4.1",
         "drupal/better_exposed_filters": "^3.0",
         "drupal/bg_image_formatter": "^1.6",
