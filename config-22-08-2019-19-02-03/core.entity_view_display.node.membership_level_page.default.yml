@@ -1,0 +1,46 @@
+uuid: 4d909556-eb53-4e46-827d-04505ca5f401
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.membership_level_page.body
+    - field.field.node.membership_level_page.field_auto_taxonomy
+    - field.field.node.membership_level_page.field_membership_group
+    - node.type.membership_level_page
+  module:
+    - text
+    - user
+id: node.membership_level_page.default
+targetEntityType: node
+bundle: membership_level_page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_auto_taxonomy:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_membership_group:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

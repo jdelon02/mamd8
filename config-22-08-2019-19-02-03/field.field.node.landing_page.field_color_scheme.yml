@@ -1,0 +1,21 @@
+uuid: a93d6e92-fcb7-422a-ae12-69a44ea2da1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_color_scheme
+    - node.type.landing_page
+  module:
+    - options
+id: node.landing_page.field_color_scheme
+field_name: field_color_scheme
+entity_type: node
+bundle: landing_page
+label: 'Color Scheme'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
