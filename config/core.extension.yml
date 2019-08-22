@@ -58,6 +58,7 @@ module:
   paragraphs_library: 0
   path: 0
   quickedit: 0
+  quicktabs: 0
   rdf: 0
   responsive_bg_image_formatter: 0
   responsive_image: 0

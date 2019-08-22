@@ -1,0 +1,137 @@
+uuid: 3ab29e6b-9be1-425a-8ebf-e2a0a60cbe42
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.membership_landing.field_field_1
+    - field.field.node.membership_landing.field_field_2
+    - field.field.node.membership_landing.field_field_3
+    - field.field.node.membership_landing.field_field_4
+    - node.type.membership_landing
+  module:
+    - field_group
+    - user
+third_party_settings:
+  field_group:
+    group_top_level:
+      children:
+        - group_first_group
+        - group_second_group
+      parent_name: ''
+      weight: 1
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: vertical
+      label: 'Top Level'
+      region: content
+    group_sub_level:
+      children:
+        - field_field_2
+      parent_name: group_first_sub_group
+      weight: 4
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: vertical
+      label: 'Sub Level'
+      region: content
+    group_first_group:
+      children:
+        - field_field_1
+        - group_first_sub_group
+      parent_name: group_top_level
+      weight: 7
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+      label: 'First Group'
+      region: content
+    group_second_group:
+      children:
+        - field_field_3
+        - group_second_sub_group
+      parent_name: group_top_level
+      weight: 8
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+      label: 'Second Group'
+      region: content
+    group_first_sub_group:
+      children:
+        - group_sub_level
+      parent_name: group_first_group
+      weight: 3
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+      label: 'First Sub Group'
+      region: content
+    group_second_sub_group:
+      children:
+        - field_field_4
+      parent_name: group_second_group
+      weight: 5
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+      label: 'Second Sub Group'
+      region: content
+id: node.membership_landing.default
+targetEntityType: node
+bundle: membership_landing
+mode: default
+content:
+  field_field_1:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_field_2:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_field_3:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_field_4:
+    weight: 5
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
