@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.membership_level_page.body
+    - field.field.node.membership_level_page.field_auto_taxonomy
     - field.field.node.membership_level_page.field_membership_group
     - node.type.membership_level_page
   module:
@@ -29,6 +30,15 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_auto_taxonomy:
+    weight: 123
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
+    region: content
   field_membership_group:
     weight: 122
     settings:
