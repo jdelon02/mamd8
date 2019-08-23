@@ -1,0 +1,33 @@
+uuid: 2b7847ca-bea0-4ce9-9f91-a983bebd75ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.header_area
+    - field.field.node.exhibition_detail.body
+    - field.field.node.exhibition_detail.field_color_scheme
+    - field.field.node.exhibition_detail.field_featured_image
+    - field.field.node.exhibition_detail.field_hero_visual
+    - node.type.exhibition_detail
+  module:
+    - user
+id: node.exhibition_detail.header_area
+targetEntityType: node
+bundle: exhibition_detail
+mode: header_area
+content:
+  field_hero_visual:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: header_area
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  body: true
+  field_color_scheme: true
+  field_featured_image: true
+  links: true
+  search_api_excerpt: true

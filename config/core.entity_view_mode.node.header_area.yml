@@ -1,0 +1,10 @@
+uuid: 9ad28dba-5d1a-4918-ac62-6fa895f5358a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.header_area
+label: 'Header Area'
+targetEntityType: node
+cache: true

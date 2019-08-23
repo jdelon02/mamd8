@@ -1,0 +1,10 @@
+uuid: f2339b22-48e6-47cf-b525-5388057fe5ee
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.header_area
+label: 'Header Area'
+targetEntityType: media
+cache: true

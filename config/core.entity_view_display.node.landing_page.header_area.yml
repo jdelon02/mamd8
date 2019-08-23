@@ -1,0 +1,33 @@
+uuid: e17c63be-8603-4b81-8f22-1653dbfe7be5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.header_area
+    - field.field.node.landing_page.body
+    - field.field.node.landing_page.field_color_scheme
+    - field.field.node.landing_page.field_featured_image
+    - field.field.node.landing_page.field_hero_visual
+    - node.type.landing_page
+  module:
+    - user
+id: node.landing_page.header_area
+targetEntityType: node
+bundle: landing_page
+mode: header_area
+content:
+  field_hero_visual:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: header_area
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  body: true
+  field_color_scheme: true
+  field_featured_image: true
+  links: true
+  search_api_excerpt: true

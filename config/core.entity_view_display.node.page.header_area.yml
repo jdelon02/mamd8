@@ -1,0 +1,60 @@
+uuid: 1ccec185-9e95-4d66-95d2-4ee54a6611df
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.header_area
+    - field.field.node.page.body
+    - field.field.node.page.field_color_scheme
+    - field.field.node.page.field_featured_image
+    - field.field.node.page.field_hero_visual
+    - node.type.page
+  module:
+    - ds
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - field_hero_visual
+_core:
+  default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
+id: node.page.header_area
+targetEntityType: node
+bundle: page
+mode: header_area
+content:
+  field_hero_visual:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: header_area
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: main
+hidden:
+  body: true
+  field_color_scheme: true
+  field_featured_image: true
+  links: true
+  search_api_excerpt: true

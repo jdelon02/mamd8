@@ -1,0 +1,29 @@
+uuid: 8f5e4f25-6eab-4c03-a368-d64bdfe3f6e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.header_area
+  module:
+    - block_class
+    - views
+  theme:
+    - bot_custom
+third_party_settings:
+  block_class:
+    classes: col-sm-12
+id: views_block__header_area_block_1
+theme: bot_custom
+region: header
+weight: -10
+provider: null
+plugin: 'views_block:header_area-block_1'
+settings:
+  id: 'views_block:header_area-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }

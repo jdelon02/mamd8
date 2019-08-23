@@ -1,0 +1,33 @@
+uuid: a56f2287-c8f8-4073-92ee-69e1d9443f1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.header_area
+    - field.field.node.event_page.body
+    - field.field.node.event_page.field_color_scheme
+    - field.field.node.event_page.field_featured_image
+    - field.field.node.event_page.field_hero_visual
+    - node.type.event_page
+  module:
+    - user
+id: node.event_page.header_area
+targetEntityType: node
+bundle: event_page
+mode: header_area
+content:
+  field_hero_visual:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: header_area
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  body: true
+  field_color_scheme: true
+  field_featured_image: true
+  links: true
+  search_api_excerpt: true

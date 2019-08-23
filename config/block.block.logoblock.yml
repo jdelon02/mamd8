@@ -1,0 +1,29 @@
+uuid: 0a4c433c-5c2f-4b96-bf80-8b02e9a3fb7a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f649c836-fefa-4fed-bb20-979d44791ae5'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - bot_custom
+third_party_settings:
+  block_class:
+    classes: 'col-sm-12 col-md-4'
+id: logoblock
+theme: bot_custom
+region: navigation
+weight: -10
+provider: null
+plugin: 'block_content:f649c836-fefa-4fed-bb20-979d44791ae5'
+settings:
+  id: 'block_content:f649c836-fefa-4fed-bb20-979d44791ae5'
+  label: 'logo block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
