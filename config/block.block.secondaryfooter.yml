@@ -1,0 +1,27 @@
+uuid: 9c6d4f69-7837-4da8-9704-e123df123fa5
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.secondary-footer
+  module:
+    - menu_block
+  theme:
+    - bot_custom
+id: secondaryfooter
+theme: bot_custom
+region: footer
+weight: 0
+provider: null
+plugin: 'menu_block:secondary-footer'
+settings:
+  id: 'menu_block:secondary-footer'
+  label: 'Secondary Footer'
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'secondary-footer:'
+  suggestion: secondary_footer
+visibility: {  }

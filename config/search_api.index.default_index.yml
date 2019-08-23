@@ -9,8 +9,8 @@ dependencies:
     - search_api
   config:
     - field.storage.node.field_auto_taxonomy
-    - field.storage.node.field_membership_group
     - field.storage.node.field_tags
+    - field.storage.node.field_membership_group
     - search_api.server.default_server
     - core.entity_view_mode.node.search_index
 _core:
@@ -255,6 +255,6 @@ tracker_settings:
   default:
     indexing_order: fifo
 options:
-  cron_limit: 50
   index_directly: true
+  cron_limit: 50
 server: default_server

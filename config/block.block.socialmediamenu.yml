@@ -1,0 +1,27 @@
+uuid: c6c010e2-3584-49e5-ba5e-4b5dfdc8e1d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.social-media-menu
+  module:
+    - menu_block
+  theme:
+    - bot_custom
+id: socialmediamenu
+theme: bot_custom
+region: footer
+weight: 0
+provider: null
+plugin: 'menu_block:social-media-menu'
+settings:
+  id: 'menu_block:social-media-menu'
+  label: 'Social Media Menu'
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'social-media-menu:'
+  suggestion: social_media_menu
+visibility: {  }

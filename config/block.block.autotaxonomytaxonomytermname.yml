@@ -1,0 +1,29 @@
+uuid: c829207a-e01c-4ca0-9362-6a6c08f1414e
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.auto_taxonomy_taxonomy_term_name
+  module:
+    - facets
+    - system
+  theme:
+    - bot_custom
+id: autotaxonomytaxonomytermname
+theme: bot_custom
+region: content
+weight: -5
+provider: null
+plugin: 'facet_block:auto_taxonomy_taxonomy_term_name'
+settings:
+  id: 'facet_block:auto_taxonomy_taxonomy_term_name'
+  label: 'Auto Taxonomy » Taxonomy term » Name'
+  provider: facets
+  label_display: '0'
+  block_id: autotaxonomytaxonomytermname
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/1
+    negate: false
+    context_mapping: {  }

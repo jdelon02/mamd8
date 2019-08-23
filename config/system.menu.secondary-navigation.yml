@@ -1,0 +1,8 @@
+uuid: 186355a6-1316-4caf-b305-819e26143efc
+langcode: en
+status: true
+dependencies: {  }
+id: secondary-navigation
+label: 'Secondary Navigation'
+description: ''
+locked: false

@@ -1,0 +1,29 @@
+uuid: 6bb6d85c-164c-4641-8f21-d15864ff2075
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.membership_group_taxonomy_term_name
+  module:
+    - facets
+    - system
+  theme:
+    - bot_custom
+id: membershipgrouptaxonomytermname
+theme: bot_custom
+region: content
+weight: -6
+provider: null
+plugin: 'facet_block:membership_group_taxonomy_term_name'
+settings:
+  id: 'facet_block:membership_group_taxonomy_term_name'
+  label: 'Membership Group » Taxonomy term » Name'
+  provider: facets
+  label_display: '0'
+  block_id: membershipgrouptaxonomytermname
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/1
+    negate: false
+    context_mapping: {  }

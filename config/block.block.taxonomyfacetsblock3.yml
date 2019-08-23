@@ -1,0 +1,27 @@
+uuid: 689f989d-ccae-40c8-8fb6-4aa7c5672ca1
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+    - taxonomy_facets
+  theme:
+    - bot_custom
+id: taxonomyfacetsblock3
+theme: bot_custom
+region: content
+weight: 1
+provider: null
+plugin: taxonomy_facets_block3
+settings:
+  id: taxonomy_facets_block3
+  label: 'Taxonomy Facets block 3'
+  provider: taxonomy_facets
+  label_display: visible
+  taxo_vocabulary_id: membership_level_vocab
+visibility:
+  request_path:
+    id: request_path
+    pages: /Membershipland
+    negate: false
+    context_mapping: {  }
