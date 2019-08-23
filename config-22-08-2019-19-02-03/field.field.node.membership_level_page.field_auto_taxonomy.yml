@@ -1,0 +1,33 @@
+uuid: 47d2f762-d93a-4d28-a69f-4abec12e30e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_auto_taxonomy
+    - node.type.membership_level_page
+    - taxonomy.vocabulary.membership_name
+  content:
+    - 'taxonomy_term:membership_name:47686fd1-2daa-43e2-868a-baedec00610f'
+id: node.membership_level_page.field_auto_taxonomy
+field_name: field_auto_taxonomy
+entity_type: node
+bundle: membership_level_page
+label: 'Auto Taxonomy'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 47686fd1-2daa-43e2-868a-baedec00610f
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      membership_name: membership_name
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,92 @@
+uuid: 33a3c122-42f6-4948-a0a1-277e81f439dd
+langcode: en
+status: false
+dependencies:
+  config:
+    - field.storage.node.field_membership_group
+    - field.storage.node.field_auto_taxonomy
+    - search_api.server.dev_db_backend
+  module:
+    - taxonomy
+    - node
+    - search_api
+id: dev_db_backend_index
+name: 'Dev_DB_backend Index'
+description: ''
+read_only: false
+field_settings:
+  name:
+    label: 'Membership Group » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_membership_group:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_membership_group
+      module:
+        - taxonomy
+        - taxonomy
+  name_1:
+    label: 'Auto Taxonomy » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_auto_taxonomy:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_auto_taxonomy
+      module:
+        - taxonomy
+        - taxonomy
+  rendered_item:
+    label: 'Rendered HTML output'
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        anonymous: anonymous
+      view_mode:
+        'entity:node':
+          article: ''
+          class_page: ''
+          event_page: ''
+          exhibition_detail: ''
+          landing_page: ''
+          membership_landing: ''
+          membership_level_page: ''
+          page: ''
+          staff_page: ''
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+    dependencies:
+      module:
+        - node
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: dev_db_backend
