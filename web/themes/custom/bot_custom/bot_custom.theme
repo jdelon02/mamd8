@@ -32,15 +32,15 @@ function bot_custom_preprocess_html(&$variables) {
   }
 }
 
-/**
- * Need to add class to menu blocks.
- */
-function bot_custom_preprocess_block(&$variables) {
-  $node = \Drupal::routeMatch()->getParameter('node');
-  if($node) {
-    $selectedColor = $node->field_color_scheme->value;
-    if($selectedColor) {
-      $variables['attributes']['class'][] = $selectedColor;
-    }
-  }
-}
+// /**
+//  * Need to add class to menu blocks - NM, no I don't.
+//  */
+// function bot_custom_preprocess_block(&$variables) {
+//   $node = \Drupal::routeMatch()->getParameter('node');
+//   if($node) {
+//     $selectedColor = $node->field_color_scheme->value;
+//     if($selectedColor) {
+//       $variables['attributes']['class'][] = $selectedColor;
+//     }
+//   }
+// }
