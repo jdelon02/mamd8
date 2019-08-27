@@ -3,6 +3,6 @@ langcode: en
 status: true
 dependencies: {  }
 id: secondary-navigation
-label: 'Secondary Navigation'
+label: 'Shortcut Links Navigation'
 description: ''
 locked: false

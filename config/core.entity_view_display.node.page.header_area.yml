@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.header_area
-    - field.field.node.page.body
     - field.field.node.page.field_color_scheme
     - field.field.node.page.field_featured_image
     - field.field.node.page.field_hero_visual
@@ -53,7 +52,6 @@ content:
     type: entity_reference_entity_view
     region: main
 hidden:
-  body: true
   field_color_scheme: true
   field_featured_image: true
   links: true

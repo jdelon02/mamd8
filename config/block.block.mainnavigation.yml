@@ -1,6 +1,6 @@
 uuid: b7fded04-a4ad-4d17-8ed2-b2309d071a5c
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.main
@@ -15,19 +15,19 @@ third_party_settings:
 id: mainnavigation
 theme: bot_custom
 region: navigation
-weight: -8
+weight: -10
 provider: null
 plugin: 'superfish:main'
 settings:
   id: 'superfish:main'
-  label: 'Sub Level Navigation'
+  label: 'Main Navigation'
   provider: superfish
   label_display: '0'
-  level: '2'
+  level: '1'
   depth: '1'
   expand_all_items: false
   menu_type: horizontal
-  style: none
+  style: blue
   arrow: 1
   shadow: 1
   speed: fast

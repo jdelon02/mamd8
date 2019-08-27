@@ -28,7 +28,7 @@ cdn_cache_ttl_library: '0'
 reset_http_request_cache: ''
 table: ''
 logo:
-  path: 'public://mamlogo.png'
+  path: 'public://mamlogo_1.png'
   url: ''
   use_default: false
 features:

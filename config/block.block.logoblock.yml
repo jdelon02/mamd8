@@ -1,6 +1,6 @@
 uuid: 0a4c433c-5c2f-4b96-bf80-8b02e9a3fb7a
 langcode: en
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:basic:f649c836-fefa-4fed-bb20-979d44791ae5'
@@ -15,7 +15,7 @@ third_party_settings:
 id: logoblock
 theme: bot_custom
 region: navigation
-weight: -10
+weight: -9
 provider: null
 plugin: 'block_content:f649c836-fefa-4fed-bb20-979d44791ae5'
 settings:

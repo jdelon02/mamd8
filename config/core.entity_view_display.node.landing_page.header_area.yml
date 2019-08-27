@@ -4,13 +4,37 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.header_area
-    - field.field.node.landing_page.body
     - field.field.node.landing_page.field_color_scheme
     - field.field.node.landing_page.field_featured_image
     - field.field.node.landing_page.field_hero_visual
     - node.type.landing_page
   module:
+    - ds
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - field_hero_visual
 id: node.landing_page.header_area
 targetEntityType: node
 bundle: landing_page
@@ -24,9 +48,8 @@ content:
       link: false
     third_party_settings: {  }
     type: entity_reference_entity_view
-    region: content
+    region: main
 hidden:
-  body: true
   field_color_scheme: true
   field_featured_image: true
   links: true

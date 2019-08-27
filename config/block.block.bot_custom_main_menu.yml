@@ -17,7 +17,7 @@ _core:
 id: bot_custom_main_menu
 theme: bot_custom
 region: navigation
-weight: -9
+weight: -11
 provider: null
 plugin: 'system_menu_block:main'
 settings:
