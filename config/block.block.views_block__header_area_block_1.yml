@@ -5,11 +5,6 @@ dependencies:
   config:
     - views.view.header_area
   module:
-<<<<<<< HEAD
-    - views
-  theme:
-    - bot_custom
-=======
     - block_class
     - views
   theme:
@@ -17,7 +12,6 @@ dependencies:
 third_party_settings:
   block_class:
     classes: col-sm-12
->>>>>>> 0daa9c79002eb226c3d67db0301f4b5fe56480f5
 id: views_block__header_area_block_1
 theme: bot_custom
 region: header

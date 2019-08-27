@@ -11,7 +11,7 @@ _core:
 id: bot_custom_powered
 theme: bot_custom
 region: navigation
-weight: -7
+weight: 10
 provider: null
 plugin: system_powered_by_block
 settings:

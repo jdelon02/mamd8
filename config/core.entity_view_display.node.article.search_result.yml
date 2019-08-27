@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.search_result
+    - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_color_scheme
     - field.field.node.article.field_featured_image
@@ -14,6 +15,7 @@ dependencies:
     - node.type.article
   module:
     - image
+    - text
     - user
 _core:
   default_config_hash: uFyekWl4pl40ClJFmjk9tcyPJ-WFSXYsItJHB_XbQqs
@@ -22,6 +24,14 @@ targetEntityType: node
 bundle: article
 mode: search_result
 content:
+  body:
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 300
+    third_party_settings: {  }
+    label: hidden
+    region: content
   field_image:
     type: image
     weight: 0

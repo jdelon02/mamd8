@@ -101,7 +101,7 @@ display:
           reduce_duplicates: false
           plugin_id: search_api_options
       sorts: {  }
-      title: ''
+      title: 'Membership Level'
       header: {  }
       footer: {  }
       empty: {  }
@@ -170,10 +170,6 @@ display:
         type: none
       defaults:
         cache: false
-<<<<<<< HEAD
-      enabled: false
-=======
->>>>>>> 0daa9c79002eb226c3d67db0301f4b5fe56480f5
     cache_metadata:
       contexts:
         - 'languages:language_interface'

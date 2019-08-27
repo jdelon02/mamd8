@@ -23,19 +23,11 @@ settings:
   label: 'Tertiary navigation'
   provider: superfish
   label_display: '0'
-<<<<<<< HEAD
-  level: '2'
-  depth: '1'
-  expand_all_items: false
-  menu_type: horizontal
-  style: coffee
-=======
   level: '3'
   depth: '0'
   expand_all_items: false
   menu_type: horizontal
   style: none
->>>>>>> 0daa9c79002eb226c3d67db0301f4b5fe56480f5
   arrow: 1
   shadow: 1
   speed: fast

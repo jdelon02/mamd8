@@ -4,20 +4,10 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.header_area
-<<<<<<< HEAD
-    - field.field.node.staff_page.field_bio_picture
-    - field.field.node.staff_page.field_color_scheme
-    - field.field.node.staff_page.field_featured_image
-    - field.field.node.staff_page.field_first_name
-    - field.field.node.staff_page.field_hero_visual
-    - field.field.node.staff_page.field_last_name
-    - field.field.node.staff_page.field_position
-=======
     - field.field.node.staff_page.body
     - field.field.node.staff_page.field_color_scheme
     - field.field.node.staff_page.field_featured_image
     - field.field.node.staff_page.field_hero_visual
->>>>>>> 0daa9c79002eb226c3d67db0301f4b5fe56480f5
     - node.type.staff_page
   module:
     - user
@@ -36,17 +26,8 @@ content:
     type: entity_reference_entity_view
     region: content
 hidden:
-<<<<<<< HEAD
-  field_bio_picture: true
-  field_color_scheme: true
-  field_featured_image: true
-  field_first_name: true
-  field_last_name: true
-  field_position: true
-=======
   body: true
   field_color_scheme: true
   field_featured_image: true
->>>>>>> 0daa9c79002eb226c3d67db0301f4b5fe56480f5
   links: true
   search_api_excerpt: true
