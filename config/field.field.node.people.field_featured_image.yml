@@ -1,15 +1,15 @@
-uuid: d668c7b0-290f-48d3-b41f-3aed7e246d17
+uuid: 86e60d65-33ed-4600-8572-569f91dc2b44
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_featured_image
     - media.type.image
-    - node.type.staff_page
-id: node.staff_page.field_featured_image
+    - node.type.people
+id: node.people.field_featured_image
 field_name: field_featured_image
 entity_type: node
-bundle: staff_page
+bundle: people
 label: 'Featured Image'
 description: ''
 required: false

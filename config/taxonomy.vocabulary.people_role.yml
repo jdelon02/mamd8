@@ -1,0 +1,8 @@
+uuid: e24dc24b-21c2-4bfc-b79e-6c1f31ec9a71
+langcode: en
+status: true
+dependencies: {  }
+name: Role
+vid: people_role
+description: ''
+weight: 0

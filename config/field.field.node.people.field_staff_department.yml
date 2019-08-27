@@ -1,19 +1,19 @@
-uuid: 7ef2a43b-b2d1-49ce-914f-5aeac32b40ab
+uuid: 1e13456c-47cc-4a05-8e18-6478afe53108
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_staff_department
-    - node.type.staff_page
+    - node.type.people
     - taxonomy.vocabulary.staff_department
-id: node.staff_page.field_staff_department
+id: node.people.field_staff_department
 field_name: field_staff_department
 entity_type: node
-bundle: staff_page
+bundle: people
 label: 'Staff Department'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

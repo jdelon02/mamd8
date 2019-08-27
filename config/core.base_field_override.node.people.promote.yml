@@ -1,13 +1,13 @@
-uuid: 6045e707-310c-48d1-8072-739d3cf89d99
+uuid: 37b33f6b-5f96-41f5-8d92-4fdc20fda0a9
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.staff_page
-id: node.staff_page.promote
+    - node.type.people
+id: node.people.promote
 field_name: promote
 entity_type: node
-bundle: staff_page
+bundle: people
 label: 'Promoted to front page'
 description: ''
 required: false

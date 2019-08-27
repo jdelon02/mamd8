@@ -13,6 +13,7 @@ module:
   ckeditor: 0
   color: 0
   comment: 0
+  conditional_fields: 0
   config: 0
   config_delete: 0
   config_direct_save: 0
@@ -85,6 +86,7 @@ module:
   taxonomy: 0
   taxonomy_facets: 0
   taxonomy_manager: 0
+  term_condition: 0
   text: 0
   token: 0
   token_filter: 0

@@ -1,18 +1,18 @@
-uuid: 83ddc40f-8cf2-4389-83ee-384a09b3bfd0
+uuid: 4cb36467-df7f-4ae9-be86-88240ace8f8f
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_position
-    - node.type.staff_page
-id: node.staff_page.field_position
+    - node.type.people
+id: node.people.field_position
 field_name: field_position
 entity_type: node
-bundle: staff_page
+bundle: people
 label: Position
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

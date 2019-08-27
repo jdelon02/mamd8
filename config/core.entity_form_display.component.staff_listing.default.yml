@@ -1,0 +1,20 @@
+uuid: 9c9c98d1-1462-4334-839e-d75d3f6f7be5
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.staff_listing
+id: component.staff_listing.default
+targetEntityType: component
+bundle: staff_listing
+mode: default
+content:
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

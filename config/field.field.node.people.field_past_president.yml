@@ -1,0 +1,23 @@
+uuid: a3e88ed3-32ea-4960-ad77-00758486962e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_past_president
+    - node.type.people
+id: node.people.field_past_president
+field_name: field_past_president
+entity_type: node
+bundle: people
+label: 'Past President'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'True'
+  off_label: 'False'
+field_type: boolean

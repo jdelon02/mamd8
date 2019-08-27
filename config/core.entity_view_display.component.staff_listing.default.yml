@@ -1,0 +1,21 @@
+uuid: 2f714a21-9a14-4456-a75c-b872e6aa14c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.staff_listing
+id: component.staff_listing.default
+targetEntityType: component
+bundle: staff_listing
+mode: default
+content:
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  search_api_excerpt: true

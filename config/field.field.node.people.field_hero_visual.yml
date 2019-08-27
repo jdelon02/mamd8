@@ -1,4 +1,4 @@
-uuid: 314629a3-c4df-4511-bf3d-112f0e211707
+uuid: b72bb4d9-ee83-4683-8759-2035b0287893
 langcode: en
 status: true
 dependencies:
@@ -6,12 +6,11 @@ dependencies:
     - field.storage.node.field_hero_visual
     - media.type.image
     - media.type.remote_video
-    - media.type.video
-    - node.type.staff_page
-id: node.staff_page.field_hero_visual
+    - node.type.people
+id: node.people.field_hero_visual
 field_name: field_hero_visual
 entity_type: node
-bundle: staff_page
+bundle: people
 label: 'Hero Visual'
 description: ''
 required: false
@@ -24,7 +23,6 @@ settings:
     target_bundles:
       image: image
       remote_video: remote_video
-      video: video
     sort:
       field: _none
     auto_create: false

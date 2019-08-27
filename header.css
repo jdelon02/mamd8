@@ -1,0 +1,41 @@
+
+/**
+ * If using a CSS pre-processor, tell it to overwrite this file. If not, place
+ * your custom CSS modifications here.
+ */
+
+/**********header********/
+/*region navigation*/
+.region-navigation-collapsible {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-default {
+    background:none;
+    background-color: transparent; /*override*/
+    border-color: transparent; /*override*/
+    border:none;
+}
+
+.navbar-header nav {
+    float: right;
+    text-transform: uppercase;
+    font-family: 'Gotham-Bold';
+}
+.navbar-header nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+#block-shortcutlinksnavigation * {
+    font-size: calc(18px + (28 - 18) * ((100vw - 300px) / (1600 - 300)));
+}
+#block-bot-custom-main-menu * {
+    font-size: calc(22px + (36 - 22) * ((100vw - 300px) / (1600 - 300)));
+}
+
+/*override*/
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: transparent;
+    color: #000;
+}

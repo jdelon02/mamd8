@@ -1,0 +1,87 @@
+/**
+ * If using a CSS pre-processor, tell it to overwrite this file. If not, place
+ * your custom CSS modifications here.
+ */
+
+/*fluid typography settings*/
+p {
+  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+h1 {
+    font-size: calc(32px + (70 - 32) * ((100vw - 300px) / (1600 - 300)));
+}
+h2 {
+    font-size: calc(28px + (60 - 30) * ((100vw - 300px) / (1600 - 300)));
+}
+
+
+/**********global********/
+body{
+    font-family: 'Gotham-Book';
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+    color: #000;
+    font-size: inherit;
+}
+/** {
+    transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s
+}*/
+a {
+    color: #000;
+}
+.page-header {
+    border: none;
+}
+a:focus, a:hover {
+    color: #52b3a6;
+    text-decoration: none;
+}
+/*nav*/
+.navbar-default .navbar-nav>li>a {
+    color:#000;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #52b3a6;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color:transparent;
+    background:none;
+}
+
+
+/**********end global********/
+
+/*max-widths*/
+.dialog-off-canvas-main-canvas {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+header.container-fluid { 
+    padding-left: 0;
+    padding-right: 0;
+}
+.main-container {
+    max-width: 85%;
+    padding-left: 0;
+    padding-right: 0;
+}
+footer {
+    margin: 0 auto;
+    padding: 0;
+}
+footer.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*headings*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Gotham-Bold';
+}
+/*page header*/
+h1.page-header {
+    
+}

@@ -1,4 +1,4 @@
-uuid: 5505be75-cf72-4ec8-a686-eb241c8ce8c2
+uuid: d9fbebd1-ef19-47b8-b6ca-3dfb905828e3
 langcode: en
 status: true
 dependencies:
@@ -9,8 +9,8 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: Staff
-type: staff_page
+name: People
+type: people
 description: ''
 help: ''
 new_revision: true

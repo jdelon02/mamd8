@@ -1,0 +1,9 @@
+uuid: 04137e26-b12c-4ba7-8876-fc5144544f19
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: 'Staff Listing'
+type: staff_listing
+description: ''

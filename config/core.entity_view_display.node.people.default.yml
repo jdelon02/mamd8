@@ -1,43 +1,44 @@
-uuid: b2badddd-9477-4fad-ab22-fc440147cc99
+uuid: bc78c802-5ef7-4b84-9ead-d4d19d2b0f7d
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.staff_page.field_bio_picture
-    - field.field.node.staff_page.field_color_scheme
-    - field.field.node.staff_page.field_featured_image
-    - field.field.node.staff_page.field_first_name
-    - field.field.node.staff_page.field_hero_visual
-    - field.field.node.staff_page.field_last_name
-    - field.field.node.staff_page.field_position
-    - field.field.node.staff_page.field_staff_department
-    - node.type.staff_page
+    - field.field.node.people.body
+    - field.field.node.people.field_color_scheme
+    - field.field.node.people.field_featured_image
+    - field.field.node.people.field_first_name
+    - field.field.node.people.field_hero_visual
+    - field.field.node.people.field_last_name
+    - field.field.node.people.field_past_president
+    - field.field.node.people.field_position
+    - field.field.node.people.field_role
+    - field.field.node.people.field_staff_department
+    - node.type.people
   module:
     - options
+    - text
     - user
-id: node.staff_page.default
+id: node.people.default
 targetEntityType: node
-bundle: staff_page
+bundle: people
 mode: default
 content:
-  field_bio_picture:
-    type: entity_reference_entity_view
-    weight: 108
-    label: above
-    settings:
-      view_mode: default
-      link: false
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
     third_party_settings: {  }
     region: content
   field_color_scheme:
-    weight: 104
+    weight: 108
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_featured_image:
-    weight: 103
+    weight: 106
     label: above
     settings:
       link: true
@@ -45,7 +46,7 @@ content:
     type: entity_reference_label
     region: content
   field_first_name:
-    weight: 105
+    weight: 102
     label: above
     settings:
       link_to_entity: false
@@ -53,7 +54,7 @@ content:
     type: string
     region: content
   field_hero_visual:
-    weight: 102
+    weight: 107
     label: above
     settings:
       link: true
@@ -61,23 +62,41 @@ content:
     type: entity_reference_label
     region: content
   field_last_name:
-    weight: 106
+    weight: 103
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_past_president:
+    weight: 110
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
     region: content
   field_position:
-    weight: 107
+    weight: 104
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
+  field_role:
+    weight: 109
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   field_staff_department:
-    weight: 110
+    weight: 105
     label: above
     settings:
       link: true
@@ -86,8 +105,8 @@ content:
     region: content
   links:
     weight: 100
-    region: content
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden:
   search_api_excerpt: true
