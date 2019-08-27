@@ -1,0 +1,76 @@
+uuid: 61334c09-d02b-4a89-98eb-c1fecb80db57
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.two_column_text
+    - field.field.component.two_column_text.field_left_text_area
+    - field.field.component.two_column_text.field_right_text_area
+  module:
+    - ds
+    - smart_trim
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: bs_2col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          left:
+            wrapper: div
+            classes:
+              col-sm-6: col-sm-6
+            add_region_classes: 1
+            attributes: ''
+          right:
+            wrapper: div
+            classes:
+              col-sm-6: col-sm-6
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      left:
+        - field_left_text_area
+      right:
+        - field_right_text_area
+id: component.two_column_text.default
+targetEntityType: component
+bundle: two_column_text
+mode: default
+content:
+  field_left_text_area:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: left
+  field_right_text_area:
+    type: smart_trim
+    weight: 1
+    region: right
+    label: above
+    settings:
+      trim_length: 600
+      trim_type: chars
+      trim_suffix: ''
+      wrap_output: false
+      wrap_class: trimmed
+      more_link: false
+      more_class: more-link
+      more_text: More
+      summary_handler: full
+      trim_options: {  }
+    third_party_settings: {  }
+hidden:
+  search_api_excerpt: true
+  title: true

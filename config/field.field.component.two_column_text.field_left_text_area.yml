@@ -1,0 +1,21 @@
+uuid: 61684b2b-b23f-4a04-84ad-07896888b1cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.two_column_text
+    - field.storage.component.field_left_text_area
+  module:
+    - text
+id: component.two_column_text.field_left_text_area
+field_name: field_left_text_area
+entity_type: component
+bundle: two_column_text
+label: 'Left Text Area'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

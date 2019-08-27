@@ -1,0 +1,21 @@
+uuid: a0ea13ac-7200-4d4d-a6c8-369fb45407ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.callout_text_box
+    - field.storage.component.field_body_formatted
+  module:
+    - text
+id: component.callout_text_box.field_body_formatted
+field_name: field_body_formatted
+entity_type: component
+bundle: callout_text_box
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

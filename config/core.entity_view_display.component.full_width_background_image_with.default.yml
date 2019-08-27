@@ -1,0 +1,68 @@
+uuid: aaf9ddf3-15d7-4609-860a-e0c741a7d28f
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.full_width_background_image_with
+    - field.field.component.full_width_background_image_with.field_body_formatted
+    - field.field.component.full_width_background_image_with.field_image_media
+  module:
+    - ds
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - title
+        - field_body_formatted
+        - field_image_media
+id: component.full_width_background_image_with.default
+targetEntityType: component
+bundle: full_width_background_image_with
+mode: default
+content:
+  field_body_formatted:
+    weight: -4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: main
+  field_image_media:
+    weight: -3
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: main
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: main
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  search_api_excerpt: true

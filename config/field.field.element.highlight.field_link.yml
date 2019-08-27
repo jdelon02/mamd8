@@ -1,0 +1,23 @@
+uuid: bca82361-0de1-488d-a5cd-d2ab0cd45b80
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.element.highlight
+    - field.storage.element.field_link
+  module:
+    - link
+id: element.highlight.field_link
+field_name: field_link
+entity_type: element
+bundle: highlight
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 0
+field_type: link

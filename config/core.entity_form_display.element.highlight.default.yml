@@ -1,0 +1,49 @@
+uuid: bbd45ed8-3bbf-4d78-b060-781985e8b824
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.element.highlight
+    - field.field.element.highlight.field_background_image
+    - field.field.element.highlight.field_link
+    - field.field.element.highlight.field_sub_title
+  module:
+    - link
+    - media_library
+id: element.highlight.default
+targetEntityType: element
+bundle: highlight
+mode: default
+content:
+  field_background_image:
+    type: media_library_widget
+    weight: 3
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_sub_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

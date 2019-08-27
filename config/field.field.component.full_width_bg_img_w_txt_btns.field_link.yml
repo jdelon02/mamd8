@@ -1,0 +1,23 @@
+uuid: 92d19d11-0a23-445b-bf6d-af5d1969a791
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.full_width_bg_img_w_txt_btns
+    - field.storage.component.field_link
+  module:
+    - link
+id: component.full_width_bg_img_w_txt_btns.field_link
+field_name: field_link
+entity_type: component
+bundle: full_width_bg_img_w_txt_btns
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 1
+field_type: link

@@ -1,0 +1,30 @@
+uuid: 4405e750-5268-4e47-b936-2baa9232a14b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.three_column_highlight
+    - field.field.component.three_column_highlight.field_add_highlight
+id: component.three_column_highlight.default
+targetEntityType: component
+bundle: three_column_highlight
+mode: default
+content:
+  field_add_highlight:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

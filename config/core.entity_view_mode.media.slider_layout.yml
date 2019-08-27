@@ -1,0 +1,10 @@
+uuid: e2e5bebb-c1af-4ccf-acb2-1659030f6d36
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.slider_layout
+label: 'Slider Layout'
+targetEntityType: media
+cache: true

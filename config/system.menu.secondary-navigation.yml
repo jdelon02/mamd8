@@ -3,6 +3,10 @@ langcode: en
 status: true
 dependencies: {  }
 id: secondary-navigation
+<<<<<<< HEAD
+label: 'Shortcut Links Navigation'
+=======
 label: 'Secondary Navigation'
+>>>>>>> 0daa9c79002eb226c3d67db0301f4b5fe56480f5
 description: ''
 locked: false

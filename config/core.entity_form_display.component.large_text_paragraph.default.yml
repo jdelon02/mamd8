@@ -1,0 +1,29 @@
+uuid: 7f3df40d-a91f-417d-918b-2eafa4b78fc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.large_text_paragraph
+    - field.field.component.large_text_paragraph.field_body
+id: component.large_text_paragraph.default
+targetEntityType: component
+bundle: large_text_paragraph
+mode: default
+content:
+  field_body:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

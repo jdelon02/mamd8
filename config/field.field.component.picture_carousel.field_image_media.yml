@@ -1,0 +1,28 @@
+uuid: bc55856b-163b-4a33-b83f-68c6c3c4f414
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.picture_carousel
+    - field.storage.component.field_image_media
+    - media.type.image
+id: component.picture_carousel.field_image_media
+field_name: field_image_media
+entity_type: component
+bundle: picture_carousel
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

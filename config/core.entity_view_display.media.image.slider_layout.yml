@@ -1,0 +1,32 @@
+uuid: fb823fe9-5a91-4ff1-8c51-c74d2872ab1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.slider_layout
+    - field.field.media.image.field_media_image
+    - media.type.image
+  module:
+    - image
+_core:
+  default_config_hash: jOwnt_yq6AKAfqU6f0xKnxEkFQ2eTPJWxrk3WMLbL68
+id: media.image.slider_layout
+targetEntityType: media
+bundle: image
+mode: slider_layout
+content:
+  field_media_image:
+    label: visually_hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    weight: 1
+    region: content
+hidden:
+  created: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

@@ -12,7 +12,11 @@ dependencies:
 id: views_block__memberhsip_landing_block_1
 theme: bot_custom
 region: content
+<<<<<<< HEAD:config/block.block.views_block__memberhsip_landing_block_1.yml
 weight: -4
+=======
+weight: -2
+>>>>>>> 0daa9c79002eb226c3d67db0301f4b5fe56480f5:config/block.block.views_block__proto1_block_1.yml
 provider: null
 plugin: 'views_block:memberhsip_landing-block_1'
 settings:
@@ -25,6 +29,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /node/1
+    pages: /node/22
     negate: false
     context_mapping: {  }

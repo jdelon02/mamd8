@@ -1,0 +1,28 @@
+uuid: a97a609a-2d9e-4f02-befc-242908f0d86b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.video_reference
+    - field.storage.component.field_video
+    - media.type.remote_video
+id: component.video_reference.field_video
+field_name: field_video
+entity_type: component
+bundle: video_reference
+label: Video
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      remote_video: remote_video
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

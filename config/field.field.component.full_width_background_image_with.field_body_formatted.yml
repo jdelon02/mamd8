@@ -1,0 +1,21 @@
+uuid: 07faeaba-daca-4456-ba7c-934ab775a57d
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.full_width_background_image_with
+    - field.storage.component.field_body_formatted
+  module:
+    - text
+id: component.full_width_background_image_with.field_body_formatted
+field_name: field_body_formatted
+entity_type: component
+bundle: full_width_background_image_with
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

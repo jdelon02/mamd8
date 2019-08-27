@@ -1,0 +1,9 @@
+uuid: 7e8415d3-45de-4b56-a41f-56d82b94912a
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: 'Picture Carousel'
+type: picture_carousel
+description: ''

@@ -1,0 +1,9 @@
+uuid: 77958cb9-b8e0-4d23-ad8a-3df95ab366e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: 'Large Text Paragraph'
+type: large_text_paragraph
+description: ''

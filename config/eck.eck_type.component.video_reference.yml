@@ -1,0 +1,9 @@
+uuid: 355e8cdd-bd76-4207-ad5e-88f9fb9e059d
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: 'Video Reference'
+type: video_reference
+description: ''

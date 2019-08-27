@@ -1,0 +1,9 @@
+uuid: de44fdff-7522-4198-a2f3-2c3b38da9153
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: 'Callout Text Box'
+type: callout_text_box
+description: ''

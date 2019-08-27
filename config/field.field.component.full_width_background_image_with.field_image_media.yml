@@ -1,0 +1,28 @@
+uuid: e17cc26d-f2ba-4f5a-87f1-97267df18cda
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.full_width_background_image_with
+    - field.storage.component.field_image_media
+    - media.type.image
+id: component.full_width_background_image_with.field_image_media
+field_name: field_image_media
+entity_type: component
+bundle: full_width_background_image_with
+label: 'Background Image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

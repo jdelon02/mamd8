@@ -1,0 +1,40 @@
+uuid: 0cbf10f4-c476-4bad-b0a0-3e8889a90bdb
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.text_and_image
+    - field.field.component.text_and_image.field_body_formatted
+    - field.field.component.text_and_image.field_image_media
+  module:
+    - media_library
+    - text
+id: component.text_and_image.default
+targetEntityType: component
+bundle: text_and_image
+mode: default
+content:
+  field_body_formatted:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_image_media:
+    type: media_library_widget
+    weight: 4
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

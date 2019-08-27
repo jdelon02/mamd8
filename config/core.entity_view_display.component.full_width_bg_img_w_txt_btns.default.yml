@@ -1,0 +1,74 @@
+uuid: 09d7114b-01e8-4549-a1f9-2a522e07badc
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.full_width_bg_img_w_txt_btns
+    - field.field.component.full_width_bg_img_w_txt_btns.field_body
+    - field.field.component.full_width_bg_img_w_txt_btns.field_image_media
+    - field.field.component.full_width_bg_img_w_txt_btns.field_link
+  module:
+    - ds
+    - link
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - field_image_media
+        - field_body
+        - field_link
+id: component.full_width_bg_img_w_txt_btns.default
+targetEntityType: component
+bundle: full_width_bg_img_w_txt_btns
+mode: default
+content:
+  field_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: main
+  field_image_media:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: main
+  field_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: main
+hidden:
+  search_api_excerpt: true
+  title: true

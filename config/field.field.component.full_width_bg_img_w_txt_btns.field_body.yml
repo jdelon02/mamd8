@@ -1,0 +1,19 @@
+uuid: 8125dd48-6acb-4951-80d4-8bbd2096d186
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.full_width_bg_img_w_txt_btns
+    - field.storage.component.field_body
+id: component.full_width_bg_img_w_txt_btns.field_body
+field_name: field_body
+entity_type: component
+bundle: full_width_bg_img_w_txt_btns
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

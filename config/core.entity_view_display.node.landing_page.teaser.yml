@@ -4,27 +4,24 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.landing_page.body
+    - field.field.node.landing_page.field_color_scheme
+    - field.field.node.landing_page.field_featured_image
+    - field.field.node.landing_page.field_hero_visual
     - node.type.landing_page
   module:
-    - text
     - user
 id: node.landing_page.teaser
 targetEntityType: node
 bundle: landing_page
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
   links:
     weight: 100
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  field_color_scheme: true
+  field_featured_image: true
+  field_hero_visual: true
+  search_api_excerpt: true

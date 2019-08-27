@@ -24,6 +24,10 @@ settings:
 visibility:
   request_path:
     id: request_path
+<<<<<<< HEAD
+    pages: /node/22
+=======
     pages: /node/1
+>>>>>>> 0daa9c79002eb226c3d67db0301f4b5fe56480f5
     negate: false
     context_mapping: {  }

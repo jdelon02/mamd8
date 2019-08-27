@@ -1,0 +1,9 @@
+uuid: 230d88d2-5b87-4e3e-9055-6e5a9832aee6
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.element
+name: Highlight
+type: highlight
+description: ''

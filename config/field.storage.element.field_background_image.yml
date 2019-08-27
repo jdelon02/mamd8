@@ -1,0 +1,20 @@
+uuid: 78d002c3-8bfe-47fa-be10-6c42bff361f8
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - media
+id: element.field_background_image
+field_name: field_background_image
+entity_type: element
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

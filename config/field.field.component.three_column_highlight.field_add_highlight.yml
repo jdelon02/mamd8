@@ -1,0 +1,28 @@
+uuid: 2657c274-4dcf-4c51-9032-a25dc3678a7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.three_column_highlight
+    - eck.eck_type.element.highlight
+    - field.storage.component.field_add_highlight
+id: component.three_column_highlight.field_add_highlight
+field_name: field_add_highlight
+entity_type: component
+bundle: three_column_highlight
+label: 'Add Highlight'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:element'
+  handler_settings:
+    target_bundles:
+      highlight: highlight
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

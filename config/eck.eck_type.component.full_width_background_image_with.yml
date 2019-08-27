@@ -1,0 +1,9 @@
+uuid: a1cd6e67-7022-4317-942e-a27c95b2bb5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: 'Full Width Background Image With Text'
+type: full_width_background_image_with
+description: ''

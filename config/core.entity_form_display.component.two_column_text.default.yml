@@ -1,0 +1,40 @@
+uuid: f98d609e-3dda-4206-a32e-9f706a5b247b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.two_column_text
+    - field.field.component.two_column_text.field_left_text_area
+    - field.field.component.two_column_text.field_right_text_area
+  module:
+    - text
+id: component.two_column_text.default
+targetEntityType: component
+bundle: two_column_text
+mode: default
+content:
+  field_left_text_area:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_right_text_area:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,56 @@
+uuid: b53debd3-9505-4862-8b7f-c0e627bf32ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.large_text_paragraph
+    - field.field.component.large_text_paragraph.field_body
+  module:
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - title
+        - field_body
+id: component.large_text_paragraph.default
+targetEntityType: component
+bundle: large_text_paragraph
+mode: default
+content:
+  field_body:
+    weight: -4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: main
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: main
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  search_api_excerpt: true

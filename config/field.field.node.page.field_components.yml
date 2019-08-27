@@ -1,0 +1,30 @@
+uuid: 58e05560-7990-478d-905c-ae58956f69d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.picture_carousel
+    - eck.eck_type.component.video_reference
+    - field.storage.node.field_components
+    - node.type.page
+id: node.page.field_components
+field_name: field_components
+entity_type: node
+bundle: page
+label: Components
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:component'
+  handler_settings:
+    target_bundles:
+      picture_carousel: picture_carousel
+      video_reference: video_reference
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: picture_carousel
+field_type: entity_reference

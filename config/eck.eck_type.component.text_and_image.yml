@@ -1,0 +1,9 @@
+uuid: d4a4002b-d103-43ab-b3c4-d393406ee95b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: 'Text and Image'
+type: text_and_image
+description: ''

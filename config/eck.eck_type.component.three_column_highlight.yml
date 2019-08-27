@@ -1,0 +1,9 @@
+uuid: cc82756e-da6a-4b50-94ba-6733bef3a2df
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: 'Three Column Highlight'
+type: three_column_highlight
+description: ''

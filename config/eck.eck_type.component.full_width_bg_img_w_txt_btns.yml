@@ -1,0 +1,9 @@
+uuid: 30b568f2-cfd8-451e-9f8c-264f77ef2881
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: 'Full Width Background Image With Text and Buttons'
+type: full_width_bg_img_w_txt_btns
+description: ''

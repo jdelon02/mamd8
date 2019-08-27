@@ -1,0 +1,30 @@
+uuid: 72cf97f8-36d1-4f88-a68e-08f05fb22377
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.memberhsip_landing
+  module:
+    - system
+    - views
+  theme:
+    - bot_custom
+id: views_block__memberhsip_landing_block_1
+theme: bot_custom
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:memberhsip_landing-block_1'
+settings:
+  id: 'views_block:memberhsip_landing-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/1
+    negate: false
+    context_mapping: {  }

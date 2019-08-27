@@ -1,0 +1,38 @@
+uuid: f373f7a9-8f87-480f-a955-a176dc553b10
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.callout_text_box
+    - eck.eck_type.component.full_width_background_image_with
+    - eck.eck_type.component.full_width_bg_img_w_txt_btns
+    - eck.eck_type.component.large_text_paragraph
+    - eck.eck_type.component.text_and_image
+    - eck.eck_type.component.three_column_highlight
+    - field.storage.node.field_components
+    - node.type.landing_page
+id: node.landing_page.field_components
+field_name: field_components
+entity_type: node
+bundle: landing_page
+label: Components
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:component'
+  handler_settings:
+    target_bundles:
+      callout_text_box: callout_text_box
+      full_width_background_image_with: full_width_background_image_with
+      full_width_bg_img_w_txt_btns: full_width_bg_img_w_txt_btns
+      large_text_paragraph: large_text_paragraph
+      text_and_image: text_and_image
+      three_column_highlight: three_column_highlight
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: callout_text_box
+field_type: entity_reference

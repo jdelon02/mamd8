@@ -1,0 +1,21 @@
+uuid: c923b095-4d25-4629-afac-bb833af6561c
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.two_column_text
+    - field.storage.component.field_right_text_area
+  module:
+    - text
+id: component.two_column_text.field_right_text_area
+field_name: field_right_text_area
+entity_type: component
+bundle: two_column_text
+label: 'Right Text Area'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

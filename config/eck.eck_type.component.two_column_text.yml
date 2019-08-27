@@ -1,0 +1,9 @@
+uuid: a77b47e7-95db-482a-a07f-4d155cd09eb6
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: 'Two Column Text'
+type: two_column_text
+description: ''

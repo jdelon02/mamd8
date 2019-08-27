@@ -1,0 +1,41 @@
+uuid: c9c7fd86-c8a6-42c3-8d4f-7a803fe2a28e
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.full_width_background_image_with
+    - field.field.component.full_width_background_image_with.field_body_formatted
+    - field.field.component.full_width_background_image_with.field_image_media
+  module:
+    - text
+id: component.full_width_background_image_with.default
+targetEntityType: component
+bundle: full_width_background_image_with
+mode: default
+content:
+  field_body_formatted:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_image_media:
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

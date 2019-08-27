@@ -1,0 +1,50 @@
+uuid: e27743a5-4b9d-493d-9887-ed38cc0a4e7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.three_column_highlight
+    - field.field.component.three_column_highlight.field_add_highlight
+  module:
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - field_add_highlight
+id: component.three_column_highlight.default
+targetEntityType: component
+bundle: three_column_highlight
+mode: default
+content:
+  field_add_highlight:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: main
+hidden:
+  search_api_excerpt: true
+  title: true

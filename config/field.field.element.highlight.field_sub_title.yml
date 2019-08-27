@@ -1,0 +1,19 @@
+uuid: 7f4ef8a9-0bc1-44e8-8961-4d4e2b3adf60
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.element.highlight
+    - field.storage.element.field_sub_title
+id: element.highlight.field_sub_title
+field_name: field_sub_title
+entity_type: element
+bundle: highlight
+label: Sub-Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
