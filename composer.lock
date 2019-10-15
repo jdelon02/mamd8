@@ -6943,10 +6943,10 @@
         },
         {
             "name": "npm-asset/select2",
-            "version": "4.0.10",
+            "version": "4.0.11",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/select2/-/select2-4.0.10.tgz",
+                "url": "https://registry.npmjs.org/select2/-/select2-4.0.11.tgz",
                 "reference": null,
                 "shasum": null
             },
